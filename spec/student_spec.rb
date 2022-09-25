@@ -168,7 +168,6 @@ describe Student do
         jess.grade = 10
         jess.id = 3
         jess.save
-
         first_student = Student.first_student_in_grade_10
         expect(first_student.id).to eq(2)
         expect(first_student.name).to eq("Sam")
